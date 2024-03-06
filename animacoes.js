@@ -26,7 +26,7 @@ function initTabNav(){
 initTabNav()
 
 function initAccordion(){
-  const accordionList = document.querySelectorAll('.js-accordion dt');
+  const accordionList = document.querySelectorAll('[data-anime="accordion"] dt');
   const activeClass = 'ativo'
   if(accordionList.length){
     accordionList[0].nextElementSibling.classList.add(activeClass)
@@ -45,7 +45,7 @@ function initAccordion(){
 initAccordion()
 
 function initScrollSuave(){
-  const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+  const linksInternos = document.querySelectorAll('[data-menu="suave"] a[href^="#"]');
   
   function scrollToSection(event){
     event.preventDefault();
